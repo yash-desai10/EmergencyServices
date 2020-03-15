@@ -1,0 +1,88 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jigish.emse.home"
+    android:background="#ffffff">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10">
+        <LinearLayout
+            android:layout_marginTop="150dp"
+            android:layout_weight="5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:background="#ffffff">
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/hospital"
+                android:textAllCaps="true"
+                android:outlineProvider="background"
+                android:id="@+id/hospital1" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/fire_brigade"
+                android:layout_margin="10dp"
+                android:textAllCaps="true"
+                android:id="@+id/fire2"
+                android:onClick="fire"
+                android:outlineProvider="background"
+                />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:outlineProvider="background"
+                android:layout_margin="10dp"
+                android:background="@drawable/police"
+                android:textAllCaps="true"
+                android:onClick="police"
+                android:id="@+id/police3" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="Hospital"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:textAllCaps="true"
+                android:layout_marginLeft="25dp"
+                />
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:text="fire"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:layout_marginLeft="70dp"
+                android:textAllCaps="true"/>
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:text="police"
+                android:layout_marginLeft="10dp"
+                android:textAllCaps="true"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

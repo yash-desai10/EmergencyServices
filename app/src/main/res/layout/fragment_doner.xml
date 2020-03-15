@@ -1,0 +1,238 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.jigish.emse.Doner"
+    android:background="@drawable/backgroundre">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="16">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="1.5"
+            android:weightSum="10">
+            <TextView
+                android:id="@+id/tv"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="DATE OF BIRTH:"
+                android:textAllCaps="true"
+                android:layout_weight="3"/>
+            <EditText
+                android:id="@+id/date"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:hint="dd/mm/yyyy"
+                android:layout_weight="4"/>
+            <Button
+                android:id="@+id/date1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="date"
+                android:textAllCaps="true"
+                android:layout_weight="3"
+                android:onClick="pick"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="1.5"
+            android:weightSum="6"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/gender"
+                android:textAllCaps="true"
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:text="gender"
+                android:layout_weight="2"/>
+
+            <RadioGroup
+                android:id="@+id/radiosexgrup"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:weightSum="2"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:text="male"
+                    android:textAllCaps="true"/>
+                <RadioButton
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textAllCaps="true"
+                    android:layout_height="match_parent"
+                    android:text="female"/>
+
+            </RadioGroup>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="1.5"
+            android:weightSum="6"
+            android:layout_marginTop="20dp">>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:textAllCaps="true"
+                android:text="Blood Group"/>
+
+            <com.jaredrummler.materialspinner.MaterialSpinner
+            android:id="@+id/spinner"
+            android:layout_width="0dp"
+                android:layout_weight="4"
+            android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:weightSum="8"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2.5"
+                android:textAllCaps="true"
+                android:gravity="center"
+                android:text="Weight(kg)"/>
+            <pl.polak.clicknumberpicker.ClickNumberPickerView
+                android:id="@+id/numberpicker1"
+                android:layout_width="0dp"
+                android:layout_weight="5.5"
+                android:layout_marginLeft="50dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                app:value="50"
+                app:min_value="40"
+                app:max_value="100"
+                app:picker_corner_radius="10"
+                app:pickers_background_color="#00796B"
+                app:swipe_enabled="false"
+                app:swipe_animation="true"
+                app:value_background_color="#009688"
+                app:value_text_color="@android:color/white"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:weightSum="8"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:layout_width="0dp"
+                android:textAllCaps="true"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="2.5"
+                android:text="height(ft)"/>
+            <pl.polak.clicknumberpicker.ClickNumberPickerView
+                android:id="@+id/numberpicker2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5.5"
+                android:layout_marginLeft="50dp"
+                app:picker_corner_radius="10"
+                app:pickers_background_color="#00796B"
+                app:swipe_enabled="false"
+                app:swipe_animation="true"
+                app:value_background_color="#009688"
+                app:value_text_color="@android:color/white"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:weightSum="8"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:layout_width="0dp"
+                android:textAllCaps="true"
+                android:layout_height="match_parent"
+                android:layout_weight="2.5"
+                android:gravity="center"
+                android:text="age"/>
+            <pl.polak.clicknumberpicker.ClickNumberPickerView
+                android:id="@+id/numberpicker3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5.5"
+                app:swipe_animation="true"
+                android:layout_marginLeft="50dp"
+                app:value="18"
+                app:min_value="18"
+                app:picker_corner_radius="10"
+                app:pickers_background_color="#00796B"
+                app:swipe_enabled="false"
+                app:value_background_color="#009688"
+                app:value_text_color="@android:color/white"/>
+            <!--<TextView-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_centerInParent="true"-->
+                <!--android:text="year"/>-->
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:layout_marginTop="30dp">
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="170dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:text="submit"
+                android:onClick="onsubmit"
+                android:background="@drawable/button_shape"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                android:layout_marginLeft="99dp"
+                android:layout_marginTop="20dp"
+                android:padding="8dp"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</FrameLayout>
+</ScrollView>

@@ -1,0 +1,41 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jigish.emse.Fire">
+
+    <!-- TODO: Update blank fragment layout -->
+   <!-- <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/hello_blank_fragment" />
+-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="10dp">
+    <Button
+        android:id="@+id/fsearch"
+        android:layout_width="165dp"
+        android:layout_height="match_parent"
+        android:text="fire Station search"
+        android:background="@drawable/button_roundshape"
+        android:layout_gravity="center"
+        />
+    <!--<Button
+        android:id="@+id/report"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:text="NOC"
+        />
+    <Button
+          android:id="@+id/bbank"
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="2"
+          android:text=" "
+          />-->
+    </LinearLayout>
+</FrameLayout>

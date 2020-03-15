@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jigish.emse.MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:weightSum="6"
+    android:scaleX="@android:integer/config_longAnimTime"
+    android:background="@drawable/back"
+    android:orientation="vertical">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="70dp"
+    android:orientation="horizontal"
+    android:background="#99757575">
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="107dp"
+        android:layout_height="138dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/hospital"
+        android:textAllCaps="true"
+        android:outlineProvider="background"
+        android:id="@+id/hospital1" />
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="111dp"
+        android:layout_height="141dp"
+        android:background="@drawable/fire"
+        android:layout_margin="10dp"
+        android:textAllCaps="true"
+        android:id="@+id/fire2"
+        android:onClick="fire"
+        android:outlineProvider="background"
+        />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="133dp"
+        android:outlineProvider="background"
+        android:layout_margin="10dp"
+        android:background="@drawable/police"
+        android:textAllCaps="true"
+        android:onClick="police"
+        android:id="@+id/police3" />
+
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:background="#99757575">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="Hospital"
+            android:textColor="#f7f4f4"
+            android:textSize="15dp"
+            android:textAllCaps="true"
+            android:layout_marginLeft="25dp"
+            />
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:text="fire"
+            android:textColor="#f7f4f4"
+            android:textSize="15dp"
+            android:layout_marginLeft="70dp"
+            android:textAllCaps="true"/>
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:textColor="#f7f4f4"
+            android:textSize="15dp"
+            android:text="police"
+            android:layout_marginLeft="25dp"
+            android:textAllCaps="true"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="381dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical"
+        android:weightSum="2"
+        android:baselineAligned="true"
+        android:background="#60757575">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+        <ImageView
+            android:layout_width="46dp"
+            android:layout_height="42dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="1dp"
+            android:padding="8dp"
+            android:background="@drawable/user" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:padding="8dp"
+            android:onClick="login"
+            android:text="Login in with user"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:background="#0f000000"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/login"/>
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+        <ImageView
+            android:layout_width="41dp"
+            android:layout_height="47dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="1dp"
+            android:padding="0dp"
+            android:src="@drawable/signup" />
+            <!--android:src="@drawable/gmail" />-->
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:text="Signup"
+                android:textColor="#000000"
+                android:textSize="14dp"
+                android:onClick="signup"
+                android:background="#0f000000"
+                android:textStyle="bold"
+                android:id="@+id/email_sign_in_button"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height= "wrap_content"
+    android:layout_gravity="center"
+    android:scrollIndicators="left"
+    android:textSize="20dp"
+    android:textAllCaps="true"
+    android:text="Save one life ,\n you're a hero" />
+
+</LinearLayout>
